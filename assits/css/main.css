@@ -2,11 +2,13 @@
 
 .nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 .header .logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -37,4 +39,9 @@
     background-color: var(--maincolor);
     color: #fff;
 
+}
+@media (max-width:920px) {
+    .nav{
+        display: none;
+    }
 }
