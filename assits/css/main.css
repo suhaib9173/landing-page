@@ -1,0 +1,40 @@
+@import './base.css';
+
+.nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 30px;
+}
+
+.header .logo a {
+    color: var(--maincolor);
+}
+
+.nav ul li a {
+    color: #101928;
+}
+
+.first-list {
+    font-weight: 900;
+}
+
+.auth a {
+    color: var(--maincolor);
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--maincolor);
+}
+
+.auth a:last-of-type {
+    background-color: var(--maincolor);
+    color: #fff;
+
+}
