@@ -1,47 +1,104 @@
-@import './base.css';
-
-.nav ul {
+@import url(./base.css);
+body{
+    height: 1000px;
+}
+.nav ul{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
-
-.header .logo {
+. header .logo  a{
+    color: var(--maincolor);
+}
+.header .logo{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
-.header .logo img {
+.header .logo img{
     width: 30px;
 }
-
-.header .logo a {
-    color: var(--maincolor);
-}
-
-.nav ul li a {
+.nav ul li a{
     color: #101928;
 }
-
-.first-list {
+.first-list{
     font-weight: 900;
 }
-
-.auth a {
+.auth a{
     color: var(--maincolor);
     padding: 5px 20px;
-    border-radius: 5px;
     border: 1px solid var(--maincolor);
+    border-radius:5px ;
 }
-
-.auth a:last-of-type {
+.auth a:last-of-type{
+    color: #ffffff;
     background-color: var(--maincolor);
-    color: #fff;
-
 }
+
 @media (max-width:920px) {
     .nav{
         display: none;
     }
+}
+/*End header*/
+.footer{
+    background-color: #393e46;
+    color:#F4F4F4;
+    padding: 50px 0px;
+   
+}
+.footer a{
+    color:#F4F4F4;
+}
+.footer .footer-left-side,
+.footer .footer-right-side{
+    width:calc((100% - 40px) / 2);
+  
+}
+.footer .row{
+    gap: 40px;
+}
+.footer .footer-left-side{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.footer .footer-left-side .logo{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+
+}
+.footer .footer-left-side .logo img{
+    width: 30px;
+}
+.footer .footer-left-side .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+.footer .footer-left-side .icons img{
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 15px;
+    height:15px;
+    box-sizing: content-box;
+}
+.footer .footer-right-side .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.footer .footer-right-side .footer-item ul{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    flex-wrap: wrap;
+}
+.footer .footer-right-side .row{
+   align-items: flex-start;
 }
